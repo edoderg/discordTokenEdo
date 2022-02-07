@@ -18,7 +18,7 @@ Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemon
 
 <br>
 
-**Schritt 2.** Lade das Script herunter [hier](chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/ask.html?aid=c594caf8-d560-4c56-adc6-d5e2279a5600).
+**Schritt 2.** Lade das Script herunter [hier](https://github.com/edoderg/discordTokenEdo/blob/main/discordTokenEdo.user.js) -> auf RAW.
 
 <br>
 
