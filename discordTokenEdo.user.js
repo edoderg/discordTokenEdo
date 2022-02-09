@@ -5,7 +5,7 @@
   // @description  Discord Token Via Hotkey<33
   // @author       edo
   // @match        https://discord.com/*
-  // @icon         https://www.google.com/s2/favicons?domain=github.com
+  // @icon         https://cdn.discordapp.com/embed/avatars/1.png
   // @downloadURL https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js
   // @updateURL https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js
   // @grant all
