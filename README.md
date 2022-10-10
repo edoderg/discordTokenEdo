@@ -1,6 +1,6 @@
 # discordTokenEdo v1.2
 
-## Lässt mit einer Tastenkombination ( ALT + G ) deinen Discord Token anzeigen. -> Bedingung: Eingeloggt sein auf https://discord.com
+## Lässt mit einer Tastenkombination ( ALT + G ) deinen Discord Token anzeigen. -> Bedingung: Eingeloggt sein auf https://discord.com/app
 
 ### Installieren
 
