@@ -21,7 +21,7 @@
 				<!DOCTYPE html>
 				<html>
 				<head>
-        <title>Dein Discord Token | edoderg 2022</title>
+        <title>Dein Discord Token | edoderg 2023</title>
         <style>
             body {
                 font-family: sans-serif;
