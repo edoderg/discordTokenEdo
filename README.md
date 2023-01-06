@@ -1,27 +1,54 @@
 # discordTokenEdo v1.2
+###### [ENG] Press a key combination ( ALT + G ) to display your Discord token. Requirement: Be logged in on [Discord](https://discord.com/login)
+###### [GER] Lässt mit einer Tastenkombination ( ALT + G ) deinen Discord Token anzeigen. Bedingung: Eingeloggt sein auf [Discord](https://discord.com/login)
 
-## Lässt mit einer Tastenkombination ( ALT + G ) deinen Discord Token anzeigen. -> Bedingung: Eingeloggt sein auf https://discord.com/app
+## [ENGLISH]
+
+#### Lets u display your discord token and copy it easily with a key combination.
+
+### Installing Proccess
+
+**Step 1.** Install one of the browser extensions:
+
+_Tampermonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo),_
+              _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)_
+              
+_Violentmonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag),_
+               _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/),_ 
+               _[Maxthon](https://extension.maxthon.com/detail/index.php?view_id=1680)_
+              
+_Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)_
+
+**Step 2.** Download the script _[here](https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js)_
+
+**Step 3.** Confirm the installation of the script.
+<br>
+## [GERMAN]
+
+#### Ermöglicht das einfache Kopieren und Anzeigen von deinem Discord Token mit einer Tastenkombination.
 
 ### Installieren
 
-**Schritt 1.** Installier einer der Browser Erweiterungen
+**Schritt 1.** Installier einer der Browser Erweiterungen:
 
-Tampermonkey: [Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo), 
-              [Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
+_Tampermonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo),_ 
+              _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)_
               
-Violentmonkey: [Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag), 
-               [Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/), 
-               [Maxthon](https://extension.maxthon.com/detail/index.php?view_id=1680)
+_Violentmonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag),_ 
+               _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/),_ 
+               _[Maxthon](https://extension.maxthon.com/detail/index.php?view_id=1680)_
               
-Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
+_Greasemonkey:_ _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)_
 
 <br>
 
-**Schritt 2.** Lade das Script herunter [hier](https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js)
+**Schritt 2.** Lade das Script herunter _[hier](https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js)_
 
 **Schritt 3.** Bestätige die Installation vom Script.
 <br>
-# Userscript made by:
+# LEAVE A ⭐ THANK YOU
+
+## Userscript made by:
 
 <p align="left">
     <a href="https://discord.com/users/269831113919299584">
