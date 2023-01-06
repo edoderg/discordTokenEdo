@@ -23,7 +23,7 @@ _Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemo
 
 **Step 3.** Confirm the installation of the script.
 
-## Preview:
+## View when pressing *ALT + G*:
 
 ![Preview](preview.png)
 
@@ -50,7 +50,7 @@ _Greasemonkey:_ _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/grease
 
 **Schritt 3.** Bestätige die Installation vom Script.
 
-## Vorschau:
+## Ansicht wenn man *ALT + G* drückt:
 
 ![Preview](preview.png)
 
