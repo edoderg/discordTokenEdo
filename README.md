@@ -22,7 +22,13 @@ _Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemo
 **Step 2.** Download the script _[here](https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js)_
 
 **Step 3.** Confirm the installation of the script.
+
+## Preview:
+
+![Preview](preview.png)
+
 <br>
+
 ## [GERMAN]
 
 #### Ermöglicht das einfache Kopieren und Anzeigen von deinem Discord Token mit einer Tastenkombination.
@@ -40,12 +46,16 @@ _Violentmonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/violentmonk
               
 _Greasemonkey:_ _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)_
 
-<br>
-
 **Schritt 2.** Lade das Script herunter _[hier](https://github.com/edoderg/discordTokenEdo/raw/main/discordTokenEdo.user.js)_
 
 **Schritt 3.** Bestätige die Installation vom Script.
+
+## Vorschau:
+
+![Preview](preview.png)
+
 <br>
+
 # LEAVE A ⭐ THANK YOU
 
 ## Userscript made by:
