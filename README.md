@@ -19,7 +19,7 @@ _Violentmonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/violentmonk
               
 _Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)_
 
-**Step 2.** Download the plugin [Here](https://edoderg.github.io/discordTokenEdo/discordTokenEdo.user.js) → **WHEN ON WEBSITE:** **<ins>CTRL + S</ins>** 🚩
+**Step 2.** Download the plugin [Here](https://edoderg.github.io/discordTokenEdo/discordTokenEdo.user.js)
 
 **Step 3.** Confirm the installation of the script.
 
@@ -46,7 +46,7 @@ _Violentmonkey:_ _[Chrome](https://chrome.google.com/webstore/detail/violentmonk
               
 _Greasemonkey:_ _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)_
 
-**Schritt 2.** Lade das Plugin herunter [Hier](https://edoderg.github.io/discordTokenEdo/discordTokenEdo.user.js) → **WENN AUF WEBSEITE:** **<ins>STRG + S</ins>** 🚩
+**Schritt 2.** Lade das Plugin herunter [Hier](https://edoderg.github.io/discordTokenEdo/discordTokenEdo.user.js)
 
 **Schritt 3.** Bestätige die Installation vom Script.
 
