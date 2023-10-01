@@ -25,7 +25,7 @@ _Greasemonkey: [Firefox](https://addons.mozilla.org/en-US/firefox/addon/greasemo
 
 ## View when pressing *ALT + G*:
 
-![Preview](preview.png)
+![Preview](Preview.jpg)
 
 <br>
 
@@ -52,7 +52,7 @@ _Greasemonkey:_ _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/grease
 
 ## Ansicht wenn man *ALT + G* drückt:
 
-![Preview](preview.png)
+![Preview](Preview.jpg)
 
 <br>
 
