@@ -20,53 +20,118 @@
         return alert('Popup Error. Mies.');
       }
       popup.document.write(`
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <title>Dein Discord Token | edoderg 2023</title>
+      <!DOCTYPE html>
+      <html>
+      <head>
+          <title>Your Discord Token | @edoderg 2023</title>
           <style>
-            body {
-              font-family: sans-serif;
-              text-align: center;
-            }
-  
-            input {
-              background: lightgray;
-              font-family: Consolas, serif;
-              padding: 7.5px;
-              border-radius: 7.5px;
-              margin-right: 5px;
-            }
-  
-            .warnung {
-              background: yellow;
-              border: 5px solid red;
-              padding: 7.5px;
-              margin-top: 30px;
-            }
-  
-            button {
-              padding: 6px;
-            }
-  
-            .noselect {
-              -webkit-user-select: none;
-              -khtml-user-select: none;
-              -moz-user-select: none;
-              -ms-user-select: none;
-              -o-user-select: none;
-              user-select: none;
-            }
+              body {
+                  font-family: Arial, sans-serif;
+                  text-align: center;
+                  background-color: #f0f0f0;
+                  margin: 0;
+                  padding: 0;
+              }
+              h1 {
+                  font-size: 18px;
+                  margin-top: 10px;
+              }
+              input {
+                  background: #eee;
+                  font-family: Consolas, serif;
+                  padding: 7.5px;
+                  border: 1px solid #ccc;
+                  border-radius: 7.5px;
+                  margin: 5px;
+                  width: 80%;
+                  text-align: center;
+              }
+              .warnung {
+                  border: 1px solid red;
+                  padding: 7.5px;
+                  margin: 20px auto;
+                  font-size: 14px;
+                  text-align: center;
+                  display: inline-block;
+              }
+              .warnung div {
+                  background: yellow;
+                  display: inline-block;
+                  padding: 5px 10px;
+              }
+              .button-container {
+                  margin-top: 10px;
+                  text-align: center;
+              }
+              button {
+                  padding: 6px 12px;
+                  background-color: #007bff;
+                  color: white;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  margin: 5px;
+              }
+              .censored-token {
+                  background: #eee;
+                  font-family: Consolas, serif;
+                  padding: 7.5px;
+                  border: 1px solid #ccc;
+                  border-radius: 7.5px;
+                  margin: 5px;
+                  width: 80%;
+                  text-align: center;
+                  color: transparent;
+                  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                  height: 30px;
+                  line-height: 30px;
+              }
+              button:hover {
+                  background-color: #0056b3;
+              }
+              .noselect {
+                  user-select: none;
+              }
           </style>
-        </head>
-        <body>
-          <h1>Dein Discord Token:</h1>
-          <input id='edoToken' size='90'></code>
-          <button class="noselect" id="kopieren">Kopieren</button>
-          <h2 class="warnung">TEILE NIEMALS DEINEN DISCORD TOKEN!</h2>
-        </body>
-        </html>
-      `);
+      </head>
+      <body>
+      <h1>Your Discord Token:</h1>
+      <div id="token-container">
+          <input id='edoToken' size='100' readonly value="******************************************************************************************" style="display: none;"></input>
+          <span id="censored-text" class="censored-token">******************************************************************************************</span>
+          <button id="show-token" class="noselect">Show Token</button>
+      </div>
+      <div class="button-container">
+          <button class="noselect" id="kopieren">Copy</button>
+      </div>
+      <h2 class="warnung">NEVER GIVE YOUR DISCORD TOKEN TO ANYONE!</h2>
+      <script>
+          var tokenVisible = false;
+          var tokenInput = document.getElementById('edoToken');
+          var censoredText = document.getElementById('censored-text');
+          var zeigDiscordToken = document.getElementById('show-token');
+    
+          function updateButtonLabel() {
+            zeigDiscordToken.textContent = tokenVisible ? 'Hide Token' : 'Show Token';
+          }
+    
+          zeigDiscordToken.addEventListener('click', function () {
+              tokenVisible = !tokenVisible;
+              if (tokenVisible) {
+                  tokenInput.style.display = 'inline';
+                  censoredText.style.display = 'none';
+              } else {
+                  tokenInput.style.display = 'none';
+                  censoredText.style.display = 'inline';
+              }
+              updateButtonLabel();
+          });
+    
+          updateButtonLabel();
+      </script>
+    </body>
+    </html>
+  `);
   
       getToken();
   
@@ -87,7 +152,7 @@
         textarea.select();
         popup.document.execCommand("copy");
         popup.document.body.removeChild(textarea);
-        popup.alert("Dein Discord Token wurde erfolgreich in die Zwischenablage kopiert!");
+        popup.alert("Your Discord token was successfully copied to the clipboard!");
         popup.close();
       }
     }
