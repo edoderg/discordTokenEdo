@@ -1,4 +1,4 @@
-# discordTokenEdo v1.2
+# discordTokenEdo v2.0
 ###### [ENG] Press a key combination ( ALT + G ) to display your Discord token. Requirement: Be logged in on [Discord](https://discord.com/login)
 ###### [GER] Lässt mit einer Tastenkombination ( ALT + G ) deinen Discord Token anzeigen. Bedingung: Eingeloggt sein auf [Discord](https://discord.com/login)
 
@@ -57,11 +57,3 @@ _Greasemonkey:_ _[Firefox](https://addons.mozilla.org/en-US/firefox/addon/grease
 <br>
 
 # LEAVE A ⭐ THANK YOU
-
-## Userscript made by:
-
-<p align="left">
-    <a href="https://discord.com/users/269831113919299584">
-        <img title="edo's Discord" alt="edo's discord" src="https://discord.c99.nl/widget/theme-4/269831113919299584.png"/>
-    </a>
-</p> 
