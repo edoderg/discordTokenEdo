@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         discordTokenEdo
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  Discord Token Via Hotkey<33
 // @author       edo
 // @match        https://discord.com/*
@@ -36,21 +36,24 @@
         let token = "";
         try {
             window.webpackChunkdiscord_app.push([
-                [Math.random()],
+                [Symbol()],
                 {},
                 req => {
                     if (!req.c) return;
-                    for (const m of Object.keys(req.c)
-                        .map(x => req.c[x].exports)
-                        .filter(x => x)) {
-                        if (m.default && m.default.getToken !== undefined) {
-                            token = m.default.getToken();
-                            return;
-                        }
-                        if (m.getToken !== undefined) {
-                            token = m.getToken();
-                            return;
-                        }
+                    for (let m of Object.values(req.c)) {
+                        try {
+                            if (!m.exports || m.exports === window) continue;
+                            if (m.exports?.getToken) {
+                                token = m.exports.getToken();
+                                return;
+                            }
+                            for (let ex in m.exports) {
+                                if (m.exports?.[ex]?.getToken && m.exports[ex][Symbol.toStringTag] !== 'IntlMessagesProxy') {
+                                    token = m.exports[ex].getToken();
+                                    return;
+                                }
+                            }
+                        } catch {}
                     }
                 },
             ]);
@@ -58,13 +61,19 @@
         } catch (e) {
             console.error("Failed to get token:", e);
         }
-        return token || "Could not retrieve Discord token";
+        
+        // immer ein string zurückgegeben
+        const result = token || "Could not retrieve Discord token";
+        return typeof result === 'string' ? result : String(result);
     }
 
     function setupOverlay() {
         const token = getToken();
+        
+        // token validierung - muss string sein
+        const tokenString = typeof token === 'string' ? token : 'Could not retrieve Discord token';
 
-        const censoredToken = token.replace(/[a-zA-Z0-9]/g, '•');
+        const censoredToken = tokenString.replace(/[a-zA-Z0-9]/g, '•');
 
         overlay.innerHTML = `
         <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 15px;">
@@ -72,7 +81,7 @@
             <span style="color: #b9bbbe; font-size: 12px; position: absolute; right: 24px;">@edoderg 2025</span>
         </div>
         <div style="position: relative; margin: 10px auto 20px; width: 100%;">
-            <input id="edoToken" type="text" readonly value="${token}"
+            <input id="edoToken" type="text" readonly value="${tokenString}"
                    style="background: #2f3136; color: #00b0f4; font-family: 'Consolas', monospace; padding: 14px;
                           border: 1px solid #202225; border-radius: 4px; margin: 0 auto; width: 100%;
                           text-align: center; display: none; font-size: 14px; box-sizing: border-box;
